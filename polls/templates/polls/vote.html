@@ -2,10 +2,10 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <title>Detail</title>
+    <title>Vote</title>
   </head>
   <body>
-    <p>Detail:</p>
+    <p>Vote:</p>
     <form action="{% url 'polls:vote' question.id %}" method="post">
         {% csrf_token %}
         <fieldset>
@@ -18,6 +18,5 @@
         </fieldset>
         <input type="submit" value="Vote">
     </form>
-    </ul>
   </body>
 </html>
